@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Java Agri - Premium Indonesian Agricultural Exporter</title>
+    
+    <!-- Meta tags for SEO & Social Sharing -->
+    <meta name="description" content="PT. Abdurrahman Membangun Negeri (West Java Agri) is a leading Indonesian supplier and exporter of premium coconut agricultural products including Coconut Charcoal Briquette, RBD Coconut Oil, Coconut Fiber, and Desiccated Coconut.">
+    <meta name="keywords" content="West Java Agri, Coconut Briquette, RBD Coconut Oil, Desiccated Coconut, Coconut Coir, Indonesian Agricultural Exporter">
+    <meta property="og:title" content="West Java Agri - Supplying Premium Agriculture Products Across the Globe">
+    <meta property="og:description" content="Leading Indonesian exporter of high-grade coconut derivatives with sustainable quality control.">
+    <meta property="og:image" content="https://westjavaagri.vercell.app/assets/logowja.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://westjavaagri.vercell.app/assets/logowja.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            accent: '#eab308'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(20, 83, 45, 0.95), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <img src="https://westjavaagri.vercell.app/assets/logowja.png" alt="West Java Agri Logo" class="h-12 w-auto transition-transform group-hover:scale-105" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
+                    <div>
+                        <span class="block font-bold text-xl text-gray-900 tracking-tight leading-none">West Java Agri</span>
+                        <span class="text-xs text-brand-700 font-medium tracking-wider uppercase">PT. Abdurrahman Membangun Negeri</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-gray-700 hover:text-brand-700 transition" data-i18n="nav.home">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-700 transition" data-i18n="nav.about">About Us</a>
+                    <a href="#values" class="text-gray-700 hover:text-brand-700 transition" data-i18n="nav.values">Core Values</a>
+                    <a href="#products" class="text-gray-700 hover:text-brand-700 transition" data-i18n="nav.products">Products</a>
+                    <a href="#contact" class="text-gray-700 hover:text-brand-700 transition" data-i18n="nav.contact">Contact</a>
+                </nav>
+
+                <!-- Language Switcher & Quick CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Language Toggle -->
+                    <div class="inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1">
+                        <button id="lang-en" onclick="setLanguage('en')" class="px-3 py-1 text-xs font-semibold rounded-md transition-all bg-white text-brand-800 shadow-sm">EN</button>
+                        <button id="lang-id" onclick="setLanguage('id')" class="px-3 py-1 text-xs font-semibold rounded-md transition-all text-gray-600 hover:text-gray-900">ID</button>
+                    </div>
+
+                    <!-- Direct WA CTA -->
+                    <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20am%20interested%20in%20your%20products." target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-full shadow-md hover:shadow-lg transition-all duration-200 gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg">="</i>
+                        <span data-i18n="btn.whatsapp">Contact WA</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center space-x-3">
+                    <div class="inline-flex rounded-lg border border-gray-200 bg-gray-100 p-1">
+                        <button id="mobile-lang-en" onclick="setLanguage('en')" class="px-2 py-0.5 text-xs font-bold rounded bg-white text-brand-800 shadow-sm">EN</button>
+                        <button id="mobile-lang-id" onclick="setLanguage('id')" class="px-2 py-0.5 text-xs font-bold rounded text-gray-600">ID</button>
+                    </div>
+                    <button id="mobile-menu-btn" type="button" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-600" data-i18n="nav.home">Home</a>
+            <a href="#about" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-600" data-i18n="nav.about">About Us</a>
+            <a href="#values" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-600" data-i18n="nav.values">Core Values</a>
+            <a href="#products" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-600" data-i18n="nav.products">Products</a>
+            <a href="#contact" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-600" data-i18n="nav.contact">Contact</a>
+            <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20am%20interested%20in%20your%20products." target="_blank" class="w-full flex items-center justify-center px-4 py-3 text-center text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-xl shadow gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span data-i18n="btn.whatsapp">Contact via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-bg text-white pt-24 pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-300 text-xs font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-leaf"></i> PT. Abdurrahman Membangun Negeri
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        <span data-i18n="hero.title_1">Supplying Across the Globe</span>
+                        <span class="block text-brand-400 mt-1" data-i18n="hero.title_2">The Leading Supplier of Agricultural Products</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-200 font-light max-w-2xl mx-auto lg:mx-0" data-i18n="hero.subtitle">
+                        We export sustainable, premium-grade Indonesian agricultural products and value-added derivatives to global partners worldwide with uncompromising quality assurance.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20would%20like%20to%20inquire%20about%20your%20export%20products." target="_blank" class="px-8 py-4 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:shadow-brand-500/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span data-i18n="hero.cta_main">Chat on WhatsApp</span>
+                        </a>
+                        <a href="#products" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition flex items-center justify-center gap-2 text-base">
+                            <span data-i18n="hero.cta_secondary">Explore Products</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 text-gray-900 shadow-2xl relative">
+                        <div class="absolute -top-4 -right-4 bg-brand-500 text-white p-3 rounded-2xl shadow-lg">
+                            <i class="fa-solid fa-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2" data-i18n="hero.card_title">Global Export Standard</h3>
+                        <p class="text-sm text-gray-600 mb-6" data-i18n="hero.card_desc">High-quality raw materials and finished coconut goods customized to meet international market requirements.</p>
+                        
+                        <div class="space-y-4 text-sm font-medium">
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-green-50 border border-green-100">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg"></i>
+                                <span data-i18n="hero.feat_1">Strict Pre & Post Quality Assurance</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-green-50 border border-green-100">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg"></i>
+                                <span data-i18n="hero.feat_2">Custom Packaging & Bulk Shipping Options</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-lg bg-green-50 border border-green-100">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-lg"></i>
+                                <span data-i18n="hero.feat_3">Sustainable Local Farmer Partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2" data-i18n="about.tag">About Us</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900" data-i18n="about.heading">At a Glance: PT. Abdurrahman Membangun Negeri</h3>
+                <div class="mt-4 h-1 w-20 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <p data-i18n="about.p1">
+                        <strong>PT. Abdurrahman Membangun Negeri</strong> is a premier Indonesian private company dedicated to supplying and exporting high-grade agricultural commodities across the world.
+                    </p>
+                    <p data-i18n="about.p2">
+                        We prioritize customer satisfaction as the core of our business strategy. By upholding rigorous production standards, every batch undergoes thorough inspection from raw harvesting to final processing. We are committed to fostering long-term, mutually beneficial partnerships with customers, suppliers, local farmers, and environmental stakeholders.
+                    </p>
+                    <div class="p-4 bg-brand-50 border-l-4 border-brand-600 rounded-r-lg">
+                        <p class="italic text-brand-900 text-sm font-medium" data-i18n="about.quote">
+                            "Empowering local agriculture, elevating product value, and delivering excellence worldwide."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision & Mission Grid -->
+                <div class="space-y-6">
+                    <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2.5 bg-brand-600 text-white rounded-xl">
+                                <i class="fa-solid fa-eye text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900" data-i18n="about.vision_title">Vision</h4>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="about.vision_desc">
+                            To become a leading multinational corporation that strengthens Indonesia's global leadership in agricultural products and their value-added derivatives.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2.5 bg-brand-600 text-white rounded-xl">
+                                <i class="fa-solid fa-bullseye text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-900" data-i18n="about.mission_title">Mission</h4>
+                        </div>
+                        <ul class="text-gray-600 text-sm space-y-2 list-disc list-inside leading-relaxed">
+                            <li data-i18n="about.m1">Consistently deliver premium, healthy, and beneficial agricultural goods globally.</li>
+                            <li data-i18n="about.m2">Build enduring, respectful relationships with all trade partners.</li>
+                            <li data-i18n="about.m3">Execute sustainable business practices with environmental stewardship.</li>
+                            <li data-i18n="about.m4">Continuously innovate according to global market needs and trends.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="values" class="py-20 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2" data-i18n="values.tag">Our Principles</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900" data-i18n="values.heading">Core Company Values</h3>
+                <p class="text-gray-600 mt-2 text-sm" data-i18n="values.sub">The foundational principles that guide every decision and partnership we build.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3" data-i18n="values.v1_title">Integrity</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="values.v1_desc">
+                            Integrity is non-negotiable in our business. Trust forms the backbone of long-term export trade, and we maintain complete transparency, legal compliance, and zero tolerance for fraudulent practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3" data-i18n="values.v2_title">Innovation</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="values.v2_desc">
+                            We convert raw coconut resources into high-value semi-finished and finished derivative goods. Continuous improvement based on partner feedback drives our societal and economic impact.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3" data-i18n="values.v3_title">Relationships</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="values.v3_desc">
+                            We strive for long-lasting, win-win solutions that benefit our buyers, local farmers, employees, and communities through collaborative growth and mutual respect.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-16 bg-brand-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold text-brand-400 uppercase tracking-widest mb-2" data-i18n="why.tag">Why Choose Us?</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight" data-i18n="why.heading">Elevating Indonesian Agriculture for Global Markets</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6" data-i18n="why.desc1">
+                        Indonesia is home to the world's richest coconut resources. Instead of shipping unprocessed raw materials, West Java Agri processes these commodities into high-value derivatives—boosting the national economy and enhancing farmer welfare.
+                    </p>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6" data-i18n="why.desc2">
+                        Through strict standard operating procedures across pre-production, active processing, and post-production quality checks, we guarantee consistent quality and reliable supply continuity.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                        <span class="text-3xl font-bold text-brand-400 block mb-1">100%</span>
+                        <span class="text-xs text-gray-300 uppercase tracking-wider font-semibold" data-i18n="why.stat1">Quality Assured</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                        <span class="text-3xl font-bold text-brand-400 block mb-1">Grade A</span>
+                        <span class="text-xs text-gray-300 uppercase tracking-wider font-semibold" data-i18n="why.stat2">Export Standards</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                        <span class="text-3xl font-bold text-brand-400 block mb-1">Global</span>
+                        <span class="text-xs text-gray-300 uppercase tracking-wider font-semibold" data-i18n="why.stat3">Shipping Support</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                        <span class="text-3xl font-bold text-brand-400 block mb-1">Custom</span>
+                        <span class="text-xs text-gray-300 uppercase tracking-wider font-semibold" data-i18n="why.stat4">Packaging Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2" data-i18n="products.tag">Catalog</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900" data-i18n="products.heading">Our Export Products</h3>
+                <p class="text-gray-600 mt-2 text-sm" data-i18n="products.sub">Explore our range of premium Indonesian coconut derivatives available for international bulk supply.</p>
+            </div>
+
+            <div class="space-y-16">
+
+                <!-- Product 1: Briquette -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center bg-gray-50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="lg:col-span-5">
+                        <img src="https://westjavaagri.vercell.app/assets/briquette.png" alt="Coconut Charcoal Briquette" class="w-full h-80 object-cover rounded-2xl shadow" onerror="this.src='https://placehold.co/600x450/166534/ffffff?text=Coconut+Briquette'">
+                    </div>
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider" data-i18n="p1.category">Eco-Friendly Energy</span>
+                        <h4 class="text-2xl font-bold text-gray-900" data-i18n="p1.title">1. Coconut Charcoal Briquette</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="p1.desc">
+                            Made from 100% natural coconut shell raw material. Featuring a high calorific burning point, minimal ash production, low smoke, and longer burning duration. Ideal for shisha/hookah and barbecue cooking. Custom packing and shapes available.
+                        </p>
+
+                        <!-- Specs Table -->
+                        <div class="overflow-x-auto mt-4">
+                            <table class="w-full text-xs text-left text-gray-600 border border-gray-200 rounded-lg overflow-hidden bg-white">
+                                <thead class="bg-brand-50 text-brand-900 font-bold uppercase">
+                                    <tr>
+                                        <th class="p-2.5 border-b">Specification</th>
+                                        <th class="p-2.5 border-b">Premium [Grade A]</th>
+                                        <th class="p-2.5 border-b">Super [Grade B]</th>
+                                        <th class="p-2.5 border-b">Standard [Grade C]</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Calories</td>
+                                        <td class="p-2.5">7000–7200 kcal</td>
+                                        <td class="p-2.5">7000 kcal</td>
+                                        <td class="p-2.5">6500–7000 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Moisture / Humidity</td>
+                                        <td class="p-2.5">7%</td>
+                                        <td class="p-2.5">7–10%</td>
+                                        <td class="p-2.5">7–10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Ash Content</td>
+                                        <td class="p-2.5">2% White Ash</td>
+                                        <td class="p-2.5">2.5% White Ash</td>
+                                        <td class="p-2.5">4–5% White Ash</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20want%20to%20order%20Coconut%20Charcoal%20Briquettes." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-xl shadow transition">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span data-i18n="btn.inquire_p1">Inquire Briquettes</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: RBD Coconut Oil -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center bg-gray-50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="lg:col-span-5 lg:order-last">
+                        <img src="https://westjavaagri.vercell.app/assets/coconut_oil.png" alt="RBD Coconut Oil" class="w-full h-80 object-cover rounded-2xl shadow" onerror="this.src='https://placehold.co/600x450/166534/ffffff?text=RBD+Coconut+Oil'">
+                    </div>
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider" data-i18n="p2.category">Refined Vegetable Oil</span>
+                        <h4 class="text-2xl font-bold text-gray-900" data-i18n="p2.title">2. RBD Coconut Oil</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="p2.desc">
+                            Refined, Bleached, and Deodorized (RBD) Coconut Oil derived from copra coconut meat. Clear color, odorless profile, and stable triglyceride acids make it excellent for health care, cosmetics, commercial deep frying, and food manufacturing. High smoke point prevents premature food burning.
+                        </p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 list-disc list-inside bg-white p-3 rounded-xl border border-gray-100">
+                            <li data-i18n="p2.feat1">High Lauric Acid & Triglyceride content</li>
+                            <li data-i18n="p2.feat2">Zero trans-fat aroma suited for food & cosmetics</li>
+                            <li data-i18n="p2.feat3">Custom packaging options (Flexitank, IBC tote, Drums)</li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20want%20to%20inquire%20about%20RBD%20Coconut%20Oil." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-xl shadow transition">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span data-i18n="btn.inquire_p2">Inquire RBD Oil</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Coconut Fiber/Coir -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center bg-gray-50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="lg:col-span-5">
+                        <img src="https://westjavaagri.vercell.app/assets/coconut_coir.png" alt="Coconut Fiber Coir" class="w-full h-80 object-cover rounded-2xl shadow" onerror="this.src='https://placehold.co/600x450/166534/ffffff?text=Coconut+Fiber'">
+                    </div>
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider" data-i18n="p3.category">Industrial Raw Material</span>
+                        <h4 class="text-2xl font-bold text-gray-900" data-i18n="p3.title">3. Coconut Fiber / Coir</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="p3.desc">
+                            Harvested from mature coconuts, coconut coir fiber is widely used in automotive seating, doormats, ropes, brooms, mattresses, and erosion control mats due to its durability, flexibility, and cost-effectiveness.
+                        </p>
+
+                        <!-- Specs Table -->
+                        <div class="overflow-x-auto mt-4">
+                            <table class="w-full text-xs text-left text-gray-600 border border-gray-200 rounded-lg overflow-hidden bg-white">
+                                <thead class="bg-brand-50 text-brand-900 font-bold uppercase">
+                                    <tr>
+                                        <th class="p-2.5 border-b">Parameter</th>
+                                        <th class="p-2.5 border-b">Specification Standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Fiber Length</td>
+                                        <td class="p-2.5">5 – 25 cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Color</td>
+                                        <td class="p-2.5">Golden Yellow to Brown</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Moisture / Humidity</td>
+                                        <td class="p-2.5">15% – 20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Impurities / Short Coir</td>
+                                        <td class="p-2.5">Max 3% Impurity | 20% Short Coir</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Packaging</td>
+                                        <td class="p-2.5">Export Bales (90 – 120 kg)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20want%20to%20inquire%20about%20Coconut%20Fiber." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-xl shadow transition">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span data-i18n="btn.inquire_p3">Inquire Coconut Fiber</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Desiccated Coconut -->
+                <div class="grid lg:grid-cols-12 gap-8 items-center bg-gray-50 rounded-3xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="lg:col-span-5 lg:order-last">
+                        <img src="https://westjavaagri.vercell.app/assets/desiccated-coconut.png" alt="Desiccated Coconut" class="w-full h-80 object-cover rounded-2xl shadow" onerror="this.src='https://placehold.co/600x450/166534/ffffff?text=Desiccated+Coconut'">
+                    </div>
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider" data-i18n="p4.category">Food & Bakery Ingredient</span>
+                        <h4 class="text-2xl font-bold text-gray-900" data-i18n="p4.title">4. Desiccated Coconut</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="p4.desc">
+                            Grated and dried pure coconut meat rich in essential minerals (manganese, iron, selenium). Widely used as confectionery filling, bakery toppings, biscuits, and snack formulations. Available in Fine and Medium grades.
+                        </p>
+
+                        <!-- Specs Table -->
+                        <div class="overflow-x-auto mt-4">
+                            <table class="w-full text-xs text-left text-gray-600 border border-gray-200 rounded-lg overflow-hidden bg-white">
+                                <thead class="bg-brand-50 text-brand-900 font-bold uppercase">
+                                    <tr>
+                                        <th class="p-2.5 border-b">Specification</th>
+                                        <th class="p-2.5 border-b">Fine Grade</th>
+                                        <th class="p-2.5 border-b">Medium Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-100">
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Moisture Content</td>
+                                        <td class="p-2.5">3.0% Max</td>
+                                        <td class="p-2.5">3.0% Max</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Fat Content</td>
+                                        <td class="p-2.5">65 ± 3%</td>
+                                        <td class="p-2.5">65 ± 3%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">FFA (Free Fatty Acid)</td>
+                                        <td class="p-2.5">0.15% Max</td>
+                                        <td class="p-2.5">0.15% Max</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-medium">Packaging</td>
+                                        <td class="p-2.5" colspan="2">25 kg & 50 kg Multiwall Kraft Paper with Inner PE Coating (10 kg custom available)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20want%20to%20inquire%20about%20Desiccated%20Coconut." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-xl shadow transition">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span data-i18n="btn.inquire_p4">Inquire Desiccated Coconut</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Quick WA Button -->
+    <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20have%20an%20export%20inquiry." target="_blank" aria-label="Contact WhatsApp" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">
+            Chat with Us
+        </span>
+    </a>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2" data-i18n="contact.tag">Get In Touch</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900" data-i18n="contact.heading">Contact Our Sales Team</h3>
+                <p class="text-gray-600 mt-2 text-sm" data-i18n="contact.sub">Send us your inquiry, target destination, and required product specs. We respond promptly.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-6 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <h4 class="text-xl font-bold text-gray-900 mb-6" data-i18n="contact.form_title">Send Us a Message</h4>
+                    
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1" data-i18n="form.name">Full Name</label>
+                            <input type="text" id="form-name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="John Doe">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1" data-i18n="form.email">E-mail Address</label>
+                                <input type="email" id="form-email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="john@company.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1" data-i18n="form.phone">Phone / WhatsApp</label>
+                                <input type="tel" id="form-phone" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="+123456789">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1" data-i18n="form.message">Comment or Message</label>
+                            <textarea id="form-message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="Tell us about your product interest, volume, and destination port..."></textarea>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                            <button type="submit" class="flex-1 py-3.5 px-6 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span data-i18n="form.submit">Send Email Inquiry</span>
+                            </button>
+                            <button type="button" onclick="sendViaWA()" class="py-3.5 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span data-i18n="form.send_wa">Send via WA</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Notification Box -->
+                    <div id="formNotification" class="hidden mt-4 p-4 rounded-xl text-sm font-medium"></div>
+                </div>
+
+                <!-- Info & Map -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm space-y-6">
+                        <h4 class="text-xl font-bold text-gray-900" data-i18n="contact.head_office">Head Office</h4>
+                        <div class="flex items-start gap-4 text-sm text-gray-600">
+                            <div class="p-3 bg-brand-50 text-brand-700 rounded-xl mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">PT. Abdurrahman Membangun Negeri</p>
+                                <p class="mt-1">Jl. Curug Luhur-Pasir Reungit, Kp. Tenjolaya RT.001/RW.006, Ds. Tapos I, Kec. Tenjolaya, Bogor, Jawa Barat, Indonesia. 16370</p>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100">
+                            <div class="flex items-center gap-3 text-sm">
+                                <div class="p-2.5 bg-green-50 text-green-600 rounded-lg">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-medium">WhatsApp / Telegram</p>
+                                    <a href="https://wa.me/6285157259982" target="_blank" class="font-bold text-gray-800 hover:text-brand-600">+62 851 5725 9982</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm">
+                                <div class="p-2.5 bg-green-50 text-green-600 rounded-lg">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-medium">Secondary Line</p>
+                                    <a href="https://wa.me/6281382061009" target="_blank" class="font-bold text-gray-800 hover:text-brand-600">+62 813 8206 1009</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-sm pt-2">
+                            <div class="p-2.5 bg-brand-50 text-brand-700 rounded-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-medium">Official Email</p>
+                                <a href="mailto:indo.agriculture01@gmail.com" class="font-bold text-gray-800 hover:text-brand-600">indo.agriculture01@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Google Map -->
+                    <div class="rounded-3xl overflow-hidden shadow-sm border border-gray-200 h-64">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3962.8827395506264!2d106.71756493517242!3d-6.661451572745501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzknNDAuOSJTIDEwNsKwNDMnMDQuNyJF!5e0!3m2!1sid!2sid!4v1792717389480!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-gray-800">
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://westjavaagri.vercell.app/assets/logowja.png" alt="West Java Agri Logo" class="h-10 w-auto" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
+                        <span class="font-bold text-white text-lg">West Java Agri</span>
+                    </div>
+                    <p class="text-xs text-gray-400 max-w-sm" data-i18n="footer.about">
+                        PT. Abdurrahman Membangun Negeri is a trusted supplier and exporter of premium Indonesian agricultural products and derivative commodities worldwide.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer.quick_links">Quick Links</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-white transition" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="#products" class="hover:text-white transition" data-i18n="nav.products">Products</a></li>
+                        <li><a href="#contact" class="hover:text-white transition" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer.follow_us">Follow Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-brand-600 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/6285157259982" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-green-600 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 PT. Abdurrahman Membangun Negeri. All rights reserved.</p>
+                <p class="text-gray-400">By: <a href="https://rancaekek.com" target="_blank" class="text-brand-400 hover:underline">Rancaekek.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Multilingual Translation Script -->
+    <script>
+        const translations = {
+            en: {
+                "nav.home": "Home",
+                "nav.about": "About Us",
+                "nav.values": "Core Values",
+                "nav.products": "Products",
+                "nav.contact": "Contact",
+                "btn.whatsapp": "Contact WA",
+
+                "hero.title_1": "Supplying Across the Globe",
+                "hero.title_2": "The Leading Supplier of Agricultural Products",
+                "hero.subtitle": "We export sustainable, premium-grade Indonesian agricultural products and value-added derivatives to global partners worldwide with uncompromising quality assurance.",
+                "hero.cta_main": "Chat on WhatsApp",
+                "hero.cta_secondary": "Explore Products",
+                "hero.card_title": "Global Export Standard",
+                "hero.card_desc": "High-quality raw materials and finished coconut goods customized to meet international market requirements.",
+                "hero.feat_1": "Strict Pre & Post Quality Assurance",
+                "hero.feat_2": "Custom Packaging & Bulk Shipping Options",
+                "hero.feat_3": "Sustainable Local Farmer Partnerships",
+
+                "about.tag": "About Us",
+                "about.heading": "At a Glance: PT. Abdurrahman Membangun Negeri",
+                "about.p1": "<strong>PT. Abdurrahman Membangun Negeri</strong> is a premier Indonesian private company dedicated to supplying and exporting high-grade agricultural commodities across the world.",
+                "about.p2": "We prioritize customer satisfaction as the core of our business strategy. By upholding rigorous production standards, every batch undergoes thorough inspection from raw harvesting to final processing. We are committed to fostering long-term, mutually beneficial partnerships with customers, suppliers, local farmers, and environmental stakeholders.",
+                "about.quote": "\"Empowering local agriculture, elevating product value, and delivering excellence worldwide.\"",
+                "about.vision_title": "Vision",
+                "about.vision_desc": "To become a leading multinational corporation that strengthens Indonesia's global leadership in agricultural products and their value-added derivatives.",
+                "about.mission_title": "Mission",
+                "about.m1": "Consistently deliver premium, healthy, and beneficial agricultural goods globally.",
+                "about.m2": "Build enduring, respectful relationships with all trade partners.",
+                "about.m3": "Execute sustainable business practices with environmental stewardship.",
+                "about.m4": "Continuously innovate according to global market needs and trends.",
+
+                "values.tag": "Our Principles",
+                "values.heading": "Core Company Values",
+                "values.sub": "The foundational principles that guide every decision and partnership we build.",
+                "values.v1_title": "Integrity",
+                "values.v1_desc": "Integrity is non-negotiable in our business. Trust forms the backbone of long-term export trade, and we maintain complete transparency, legal compliance, and zero tolerance for fraudulent practices.",
+                "values.v2_title": "Innovation",
+                "values.v2_desc": "We convert raw coconut resources into high-value semi-finished and finished derivative goods. Continuous improvement based on partner feedback drives our societal and economic impact.",
+                "values.v3_title": "Relationships",
+                "values.v3_desc": "We strive for long-lasting, win-win solutions that benefit our buyers, local farmers, employees, and communities through collaborative growth and mutual respect.",
+
+                "why.tag": "Why Choose Us?",
+                "why.heading": "Elevating Indonesian Agriculture for Global Markets",
+                "why.desc1": "Indonesia is home to the world's richest coconut resources. Instead of shipping unprocessed raw materials, West Java Agri processes these commodities into high-value derivatives—boosting the national economy and enhancing farmer welfare.",
+                "why.desc2": "Through strict standard operating procedures across pre-production, active processing, and post-production quality checks, we guarantee consistent quality and reliable supply continuity.",
+                "why.stat1": "Quality Assured",
+                "why.stat2": "Export Standards",
+                "why.stat3": "Shipping Support",
+                "why.stat4": "Packaging Available",
+
+                "products.tag": "Catalog",
+                "products.heading": "Our Export Products",
+                "products.sub": "Explore our range of premium Indonesian coconut derivatives available for international bulk supply.",
+                
+                "p1.category": "Eco-Friendly Energy",
+                "p1.title": "1. Coconut Charcoal Briquette",
+                "p1.desc": "Made from 100% natural coconut shell raw material. Featuring a high calorific burning point, minimal ash production, low smoke, and longer burning duration. Ideal for shisha/hookah and barbecue cooking. Custom packing and shapes available.",
+                "btn.inquire_p1": "Inquire Briquettes",
+
+                "p2.category": "Refined Vegetable Oil",
+                "p2.title": "2. RBD Coconut Oil",
+                "p2.desc": "Refined, Bleached, and Deodorized (RBD) Coconut Oil derived from copra coconut meat. Clear color, odorless profile, and stable triglyceride acids make it excellent for health care, cosmetics, commercial deep frying, and food manufacturing. High smoke point prevents premature food burning.",
+                "p2.feat1": "High Lauric Acid & Triglyceride content",
+                "p2.feat2": "Zero trans-fat aroma suited for food & cosmetics",
+                "p2.feat3": "Custom packaging options (Flexitank, IBC tote, Drums)",
+                "btn.inquire_p2": "Inquire RBD Oil",
+
+                "p3.category": "Industrial Raw Material",
+                "p3.title": "3. Coconut Fiber / Coir",
+                "p3.desc": "Harvested from mature coconuts, coconut coir fiber is widely used in automotive seating, doormats, ropes, brooms, mattresses, and erosion control mats due to its durability, flexibility, and cost-effectiveness.",
+                "btn.inquire_p3": "Inquire Coconut Fiber",
+
+                "p4.category": "Food & Bakery Ingredient",
+                "p4.title": "4. Desiccated Coconut",
+                "p4.desc": "Grated and dried pure coconut meat rich in essential minerals (manganese, iron, selenium). Widely used as confectionery filling, bakery toppings, biscuits, and snack formulations. Available in Fine and Medium grades.",
+                "btn.inquire_p4": "Inquire Desiccated Coconut",
+
+                "contact.tag": "Get In Touch",
+                "contact.heading": "Contact Our Sales Team",
+                "contact.sub": "Send us your inquiry, target destination, and required product specs. We respond promptly.",
+                "contact.form_title": "Send Us a Message",
+                "contact.head_office": "Head Office",
+                "form.name": "Full Name",
+                "form.email": "E-mail Address",
+                "form.phone": "Phone / WhatsApp",
+                "form.message": "Comment or Message",
+                "form.submit": "Send Email Inquiry",
+                "form.send_wa": "Send via WA",
+
+                "footer.about": "PT. Abdurrahman Membangun Negeri is a trusted supplier and exporter of premium Indonesian agricultural products and derivative commodities worldwide.",
+                "footer.quick_links": "Quick Links",
+                "footer.follow_us": "Follow Us"
+            },
+            id: {
+                "nav.home": "Beranda",
+                "nav.about": "Tentang Kami",
+                "nav.values": "Nilai Utama",
+                "nav.products": "Produk",
+                "nav.contact": "Kontak",
+                "btn.whatsapp": "Kontak WA",
+
+                "hero.title_1": "Pemasok Hingga ke Mancanegara",
+                "hero.title_2": "Pemasok Utama Produk Pertanian Berkualitas",
+                "hero.subtitle": "Kami mengekspor produk pertanian dan turunan kelapa premium Indonesia yang berkelanjutan ke mitra global dengan jaminan kualitas terbaik.",
+                "hero.cta_main": "Chat via WhatsApp",
+                "hero.cta_secondary": "Lihat Produk",
+                "hero.card_title": "Standar Ekspor Global",
+                "hero.card_desc": "Bahan baku dan produk olahan kelapa berkualitas tinggi disesuaikan dengan kebutuhan pasar internasional.",
+                "hero.feat_1": "Pengawasan Kualitas Ketat Sebelum & Sesudah Produksi",
+                "hero.feat_2": "Opsi Pengemasan Kustom & Pengiriman Curah/Bulk",
+                "hero.feat_3": "Kemitraan Berkelanjutan dengan Petani Lokal",
+
+                "about.tag": "Tentang Kami",
+                "about.heading": "Sekilas: PT. Abdurrahman Membangun Negeri",
+                "about.p1": "<strong>PT. Abdurrahman Membangun Negeri</strong> adalah perusahaan swasta terkemuka di Indonesia yang bergerak dalam penyediaan dan ekspor komoditas pertanian berkualitas tinggi ke seluruh dunia.",
+                "about.p2": "Kami menempatkan kepuasan pelanggan sebagai inti strategi bisnis kami. Dengan menerapkan standar produksi yang ketat, setiap produk melalui inspeksi menyeluruh mulai dari panen hingga pengolahan akhir. Kami berkomitmen membangun kemitraan jangka panjang yang saling menguntungkan dengan pelanggan, pemasok, petani lokal, serta menjaga kelestarian lingkungan.",
+                "about.quote": "\"Membangun pertanian lokal, meningkatkan nilai tambah produk, dan menyajikan kualitas terbaik untuk dunia.\"",
+                "about.vision_title": "Visi",
+                "about.vision_desc": "Menjadi Perusahaan Multinasional Terdepan untuk Memperkuat Dominasi Indonesia dalam Memasok Produk Pertanian dan Turunannya ke Berbagai Negara.",
+                "about.mission_title": "Misi",
+                "about.m1": "Konsisten menyediakan produk pertanian yang berkualitas tinggi, sehat, dan bermanfaat bagi pelanggan internasional.",
+                "about.m2": "Menjalin hubungan bisnis jangka panjang yang saling menghormati dengan seluruh mitra.",
+                "about.m3": "Berkomitmen pada praktik bisnis berkelanjutan yang bertanggung jawab terhadap lingkungan.",
+                "about.m4": "Terus memperbarui pengetahuan mengenai kebutuhan produk pertanian global.",
+
+                "values.tag": "Prinsip Kami",
+                "values.heading": "Nilai-Nilai Utama Perusahaan",
+                "values.sub": "Prinsip dasar yang memandu setiap keputusan dan hubungan kerja sama yang kami bangun.",
+                "values.v1_title": "Integritas",
+                "values.v1_desc": "Integritas adalah fondasi utama kami. Kepercayaan adalah kunci bisnis ekspor jangka panjang. Kami menjunjung tinggi transparansi, kepatuhan hukum, dan toleransi nol terhadap tindakan kecurangan.",
+                "values.v2_title": "Inovasi",
+                "values.v2_desc": "Kami mengolah potensi kelapa mentah menjadi produk setengah jadi dan jadi yang bernilai tinggi. Inovasi berkesinambungan berdasarkan masukan mitra menjadi pendorong dampak positif bagi masyarakat.",
+                "values.v3_title": "Kemitraan",
+                "values.v3_desc": "Kami berfokus pada hubungan yang kuat dan saling menguntungkan (win-win solution) bagi pembeli, petani lokal, karyawan, dan lingkungan sekitar.",
+
+                "why.tag": "Mengapa Kami?",
+                "why.heading": "Meningkatkan Nilai Tambah Pertanian Indonesia untuk Pasar Global",
+                "why.desc1": "Indonesia memiliki kekayaan komoditas kelapa terbesar di dunia. West Java Agri berkomitmen mengolah bahan baku menjadi produk bernilai tambah tinggi untuk memperkuat perekonomian nasional dan meningkatkan kesejahteraan petani.",
+                "why.desc2": "Melalui prosedur operasional standar dalam pra-produksi, proses produksi, hingga inspeksi akhir, kami menjamin mutu produk yang konsisten dan pasokan yang berkesinambungan.",
+                "why.stat1": "Kualitas Terjamin",
+                "why.stat2": "Standar Ekspor",
+                "why.stat3": "Dukungan Logistik",
+                "why.stat4": "Kemasan Kustom",
+
+                "products.tag": "Katalog",
+                "products.heading": "Produk Ekspor Unggulan",
+                "products.sub": "Jelajahi ragam produk turunan kelapa berkualitas tinggi yang siap untuk pasokan internasional.",
+
+                "p1.category": "Energi Ramah Lingkungan",
+                "p1.title": "1. Briket Arang Kelapa (Coconut Charcoal Briquette)",
+                "p1.desc": "Terbuat dari 100% tempurung kelapa alami. Memiliki kalori pembakaran tinggi, abu sedikit, sedikit asap, dan daya tahan bakar lebih lama. Sangat cocok untuk shisha/hookah dan memanggang makanan (barbekyu). Ukuran dan kemasan dapat disesuaikan.",
+                "btn.inquire_p1": "Tanya Produk Briket",
+
+                "p2.category": "Minyak Nabati Murni",
+                "p2.title": "2. Minyak Kelapa RBD (RBD Coconut Oil)",
+                "p2.desc": "Minyak kelapa olahan murni (Refined, Bleached, Deodorized) dari daging kelapa kering (kopra). Berwarna jernih, bebas bau menyengat, serta kaya asam laurat. Cocok untuk industri kosmetik, perawatan kesehatan, dan penggorengan makanan.",
+                "p2.feat1": "Kandungan Asam Laurat & Trigliserida stabil",
+                "p2.feat2": "Aroma netral cocok untuk kosmetik & makanan",
+                "p2.feat3": "Opsi kemasan (Flexitank, Drum, IBC Tote)",
+                "btn.inquire_p2": "Tanya Minyak RBD",
+
+                "p3.category": "Bahan Baku Industri",
+                "p3.title": "3. Serabut / Serabut Kelapa (Coconut Fiber / Coir)",
+                "p3.desc": "Berasal dari kelapa matang pilihan. Serabut kelapa banyak digunakan untuk bahan pembuatan jok mobil, keset, tali, sapu, kasur, dan penahan erosi tanah karena daya tahannya yang kuat dan ekonomis.",
+                "btn.inquire_p3": "Tanya Serabut Kelapa",
+
+                "p4.category": "Bahan Baku Makanan & Kue",
+                "p4.title": "4. Kelapa Parut Kering (Desiccated Coconut)",
+                "p4.desc": "Daging kelapa murni yang diparut dan dikeringkan higienis. Kaya akan mineral penting dan asam lemak sehat. Sangat populer sebagai bahan adonan kue, biskuit, isian roti, dan topping olahan makanan.",
+                "btn.inquire_p4": "Tanya Kelapa Kering",
+
+                "contact.tag": "Hubungi Kami",
+                "contact.heading": "Kontak Tim Penjualan Kami",
+                "contact.sub": "Sampaikan kebutuhan produk, jumlah kuantitas, dan pelabuhan tujuan Anda. Tim kami akan segera merespon.",
+                "contact.form_title": "Kirim Pesan",
+                "contact.head_office": "Kantor Pusat",
+                "form.name": "Nama Lengkap",
+                "form.email": "Alamat E-mail",
+                "form.phone": "Nomor Telepon / WhatsApp",
+                "form.message": "Pesan atau Detail Permintaan",
+                "form.submit": "Kirim via Email",
+                "form.send_wa": "Kirim via WA",
+
+                "footer.about": "PT. Abdurrahman Membangun Negeri adalah pemasok dan eksportir terpercaya produk pertanian dan turunan kelapa premium dari Indonesia.",
+                "footer.quick_links": "Tautan Cepat",
+                "footer.follow_us": "Ikuti Kami"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update active state on language buttons
+            const btnEn = document.getElementById('lang-en');
+            const btnId = document.getElementById('lang-id');
+            const mobBtnEn = document.getElementById('mobile-lang-en');
+            const mobBtnId = document.getElementById('mobile-lang-id');
+
+            if (lang === 'en') {
+                btnEn.className = "px-3 py-1 text-xs font-semibold rounded-md transition-all bg-white text-brand-800 shadow-sm";
+                btnId.className = "px-3 py-1 text-xs font-semibold rounded-md transition-all text-gray-600 hover:text-gray-900";
+                mobBtnEn.className = "px-2 py-0.5 text-xs font-bold rounded bg-white text-brand-800 shadow-sm";
+                mobBtnId.className = "px-2 py-0.5 text-xs font-bold rounded text-gray-600";
+            } else {
+                btnId.className = "px-3 py-1 text-xs font-semibold rounded-md transition-all bg-white text-brand-800 shadow-sm";
+                btnEn.className = "px-3 py-1 text-xs font-semibold rounded-md transition-all text-gray-600 hover:text-gray-900";
+                mobBtnId.className = "px-2 py-0.5 text-xs font-bold rounded bg-white text-brand-800 shadow-sm";
+                mobBtnEn.className = "px-2 py-0.5 text-xs font-bold rounded text-gray-600";
+            }
+
+            // Translate elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submit Simulation
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const notification = document.getElementById('formNotification');
+            
+            notification.className = "mt-4 p-4 rounded-xl text-sm font-medium bg-green-100 text-green-800 border border-green-200";
+            notification.innerText = currentLang === 'en' 
+                ? "Thank you! Your message has been prepared. Our team will contact you shortly."
+                : "Terima kasih! Pesan Anda telah terkirim. Tim kami akan segera menghubungi Anda.";
+            notification.classList.remove('hidden');
+
+            document.getElementById('contactForm').reset();
+
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Direct WA redirect with form data
+        function sendViaWA() {
+            const name = document.getElementById('form-name').value || 'Customer';
+            const email = document.getElementById('form-email').value || '-';
+            const message = document.getElementById('form-message').value || 'Inquiry about products';
+
+            const text = `Halo West Java Agri,\n\nNama: ${name}\nEmail: ${email}\nPesan: ${message}`;
+            const encodedText = encodeURIComponent(text);
+            
+            window.open(`https://wa.me/6285157259982?text=${encodedText}`, '_blank');
+        }
+
+        // Initialize default language
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('en');
+        });
+    </script>
+</body>
+</html>
