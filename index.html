@@ -10,11 +10,11 @@
     <meta name="keywords" content="West Java Agri, Coconut Briquette, RBD Coconut Oil, Desiccated Coconut, Coconut Coir, Indonesian Agricultural Exporter">
     <meta property="og:title" content="West Java Agri - Supplying Premium Agriculture Products Across the Globe">
     <meta property="og:description" content="Leading Indonesian exporter of high-grade coconut derivatives with sustainable quality control.">
-    <meta property="og:image" content="https://westjavaagri.vercel.app/assets/logowja.png">
+    <meta property="og:image" content="https://westjavaagri.vercel.app/assets/logo_wja.png">
     <meta property="og:type" content="website">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://westjavaagri.vercel.app/assets/logowja.png">
+    <link rel="icon" type="image/png" href="https://westjavaagri.vercel.app/assets/logo_wja.png">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -73,7 +73,7 @@
                 
                 <!-- Logo -->
                 <a href="#home" class="flex items-center space-x-3 group">
-                    <img src="https://westjavaagri.vercel.app/assets/logowja.png" alt="West Java Agri Logo" class="h-12 w-auto transition-transform group-hover:scale-105" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
+                    <img src="https://westjavaagri.vercel.app/assets/logo_wja.png" alt="West Java Agri Logo" class="h-12 w-auto transition-transform group-hover:scale-105" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
                     <div>
                         <span class="block font-bold text-xl text-gray-900 tracking-tight leading-none">West Java Agri</span>
                         <span class="text-xs text-brand-700 font-medium tracking-wider uppercase">PT. Abdurrahman Membangun Negeri</span>
@@ -99,7 +99,7 @@
 
                     <!-- Direct WA CTA -->
                     <a href="https://wa.me/6285157259982?text=Hello%20West%20Java%20Agri,%20I%20am%20interested%20in%20your%20products." target="_blank" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-full shadow-md hover:shadow-lg transition-all duration-200 gap-2">
-                        <i class="fa-brands fa-whatsapp text-lg">="</i>
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span data-i18n="btn.whatsapp">Contact WA</span>
                     </a>
                 </div>
@@ -559,7 +559,7 @@
                 <div class="lg:col-span-6 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
                     <h4 class="text-xl font-bold text-gray-900 mb-6" data-i18n="contact.form_title">Send Us a Message</h4>
                     
-                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <form id="contactForm" onsubmit="sendViaWA(event)" class="space-y-4">
                         <div>
                             <label class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1" data-i18n="form.name">Full Name</label>
                             <input type="text" id="form-name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="John Doe">
@@ -579,14 +579,10 @@
                             <textarea id="form-message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm transition" placeholder="Tell us about your product interest, volume, and destination port..."></textarea>
                         </div>
                         
-                        <div class="flex flex-col sm:flex-row gap-3 pt-2">
-                            <button type="submit" class="flex-1 py-3.5 px-6 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-paper-plane"></i>
-                                <span data-i18n="form.submit">Send Email Inquiry</span>
-                            </button>
-                            <button type="button" onclick="sendViaWA()" class="py-3.5 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
-                                <i class="fa-brands fa-whatsapp text-lg"></i>
-                                <span data-i18n="form.send_wa">Send via WA</span>
+                        <div class="pt-2">
+                            <button type="submit" class="w-full py-3.5 px-6 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl shadow transition text-sm flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span data-i18n="form.send_wa">Send via WhatsApp</span>
                             </button>
                         </div>
                     </form>
@@ -657,7 +653,7 @@
             <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-gray-800">
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center space-x-3">
-                        <img src="https://westjavaagri.vercel.app/assets/logowja.png" alt="West Java Agri Logo" class="h-10 w-auto" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
+                        <img src="https://westjavaagri.vercel.app/assets/logo_wja.png" alt="West Java Agri Logo" class="h-10 w-auto" onerror="this.src='https://placehold.co/100x100/166534/ffffff?text=WJA'">
                         <span class="font-bold text-white text-lg">West Java Agri</span>
                     </div>
                     <p class="text-xs text-gray-400 max-w-sm" data-i18n="footer.about">
@@ -785,8 +781,7 @@
                 "form.email": "E-mail Address",
                 "form.phone": "Phone / WhatsApp",
                 "form.message": "Comment or Message",
-                "form.submit": "Send Email Inquiry",
-                "form.send_wa": "Send via WA",
+                "form.send_wa": "Send via WhatsApp",
 
                 "footer.about": "PT. Abdurrahman Membangun Negeri is a trusted supplier and exporter of premium Indonesian agricultural products and derivative commodities worldwide.",
                 "footer.quick_links": "Quick Links",
@@ -879,8 +874,7 @@
                 "form.email": "Alamat E-mail",
                 "form.phone": "Nomor Telepon / WhatsApp",
                 "form.message": "Pesan atau Detail Permintaan",
-                "form.submit": "Kirim via Email",
-                "form.send_wa": "Kirim via WA",
+                "form.send_wa": "Kirim via WhatsApp",
 
                 "footer.about": "PT. Abdurrahman Membangun Negeri adalah pemasok dan eksportir terpercaya produk pertanian dan turunan kelapa premium dari Indonesia.",
                 "footer.quick_links": "Tautan Cepat",
@@ -935,31 +929,16 @@
             });
         });
 
-        // Form Submit Simulation
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            const notification = document.getElementById('formNotification');
-            
-            notification.className = "mt-4 p-4 rounded-xl text-sm font-medium bg-green-100 text-green-800 border border-green-200";
-            notification.innerText = currentLang === 'en' 
-                ? "Thank you! Your message has been prepared. Our team will contact you shortly."
-                : "Terima kasih! Pesan Anda telah terkirim. Tim kami akan segera menghubungi Anda.";
-            notification.classList.remove('hidden');
-
-            document.getElementById('contactForm').reset();
-
-            setTimeout(() => {
-                notification.classList.add('hidden');
-            }, 6000);
-        }
-
         // Direct WA redirect with form data
-        function sendViaWA() {
-            const name = document.getElementById('form-name').value || 'Customer';
-            const email = document.getElementById('form-email').value || '-';
-            const message = document.getElementById('form-message').value || 'Inquiry about products';
+        function sendViaWA(event) {
+            if (event) event.preventDefault();
+            
+            const name = document.getElementById('form-name').value || '';
+            const email = document.getElementById('form-email').value || '';
+            const phone = document.getElementById('form-phone').value || '';
+            const message = document.getElementById('form-message').value || '';
 
-            const text = `Halo West Java Agri,\n\nNama: ${name}\nEmail: ${email}\nPesan: ${message}`;
+            const text = `Halo West Java Agri,\n\nNama: ${name}\nEmail: ${email}\nNo. HP/WA: ${phone}\nPesan: ${message}`;
             const encodedText = encodeURIComponent(text);
             
             window.open(`https://wa.me/6285157259982?text=${encodedText}`, '_blank');
